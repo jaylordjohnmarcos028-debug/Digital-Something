@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Free Digital Business Card</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>My Digital Business Card</h1>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Create Your Card</h2>
+      <form id="card-form">
+        <input type="text" placeholder="Full Name" id="fullName" required />
+        <input type="text" placeholder="Job Title" id="jobTitle" />
+        <input type="email" placeholder="Email" id="email" />
+        <input type="tel" placeholder="Phone" id="phone" />
+        <input type="url" placeholder="Website" id="website" />
+        <input type="url" placeholder="LinkedIn/Facebook/etc." id="social" />
+        
+        <label>Profile Picture</label>
+        <input type="file" id="photo" accept="image/*" />
+
+        <label>Theme Color</label>
+        <input type="color" id="themeColor" value="#3498db" />
+
+        <label>Font Style</label>
+        <select id="fontStyle">
+          <option value="sans-serif">Sans-serif</option>
+          <option value="serif">Serif</option>
+          <option value="monospace">Monospace</option>
+        </select>
+      </form>
+    </section>
+
+    <section class="preview-section">
+      <h2>Live Preview</h2>
+      <div id="card-preview" class="card">
+        <img id="preview-photo" src="" alt="Profile Photo" />
+        <h3 id="preview-name">Your Name</h3>
+        <p id="preview-title">Job Title</p>
+        <p id="preview-email">Email</p>
+        <p id="preview-phone">Phone</p>
+        <p id="preview-website">Website</p>
+        <p id="preview-social">Social</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Free & Privacy-Friendly Business Card Creator</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
